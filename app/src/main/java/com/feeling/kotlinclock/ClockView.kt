@@ -100,7 +100,7 @@ constructor(context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
     }
 
     private fun start() {
-        postDelayed(mRunnable, 1000)
+        postDelayed(mRunnable, 150)
     }
 
     private val mRunnable = Runnable {
@@ -149,7 +149,7 @@ constructor(context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
 
     override fun onDraw(canvas: Canvas) {
 //        super.onDraw(canvas)
-        setBackgroundColor(Color.parseColor("#000000"))
+//        setBackgroundColor(Color.parseColor("#000000"))
         //将视图移动到中心
         canvas.translate(mCenterX.toFloat(), mCenterY.toFloat())
         drawOutCircle(canvas)
